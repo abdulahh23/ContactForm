@@ -1,0 +1,142 @@
+<!-- Name: Abdullah shahid
+Roll: 2738
+BSIT
+
+in this project i have created a contact form using bootstrap and validate all fields using j querry in seperate file named as app.js and also i did a little bit custom css in style.css-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h3 class="text-center mb-3">Contact Form</h3>
+        <p class="text-muted mb-3">Fill all the fields</p>
+
+        <form action="" id="main_form">
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <label class="form-label" for="">First Name</label>
+                    <input class="form-control" type="text" name="firstname">
+                </div>
+
+                <div class="col-md-6">
+                    <label class="form-label" for="">Last Name</label>
+                    <input class="form-control" type="text" name="lastname">
+                </div>
+
+                <div class="col-md-6">
+                    <label class="form-label" for="">Email</label>
+                    <input class="form-control" type="email" placeholder="@gmail.com" name="email">
+                </div>
+
+                <div class="col-md-6">
+                    <label class="form-label" for="">Password</label>
+                    <input class="form-control" type="password" name="password">
+                </div>
+
+                <div class="col-md-6">
+                    <label class="form-label" for="">Phone</label>
+                    <input class="form-control" type="tel" placeholder="+92-xxx-xxxxxxx" name="phone">
+                </div>
+
+                <div class="col-md-6">
+                    <label class="form-label" for="">Date of Birth</label>
+                    <input class="form-control" type="date" name="dob">
+                </div>
+
+                <div class="col-md-6">
+                    <label class="form-label d-block" for="">Gender</label>
+
+                    <div class="form-check form-check-inline">
+                        <input id="male" class="form-check-input" type="radio" name="gender" value="male">
+                        <label for="male" class="form-check-label">Male</label>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input id="female" class="form-check-input" type="radio" name="gender" value="female">
+                        <label for="female" class="form-check-label">Female</label>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input id="other" class="form-check-input" type="radio" name="gender" value="other">
+                        <label for="other" class="form-check-label">Other</label>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <label class="form-label" for="">Your Website</label>
+                    <input class="form-control" type="url" placeholder="https://" name="website">
+                </div>
+
+                <div class="col-md-12">
+                    <label class="form-label" for="">Address</label>
+                    <textarea class="form-control" name="address"></textarea>
+                </div>
+
+                <div class="col-md-6">
+                    <label class="form-label" for="">Country</label>
+                    <select class="form-select" name="country" id="">
+                        <option value="pak">Pakistan</option>
+                        <option value="inr">India</option>
+                        <option value="ban">Bangladesh</option>
+                    </select>
+                </div>
+
+                <div class="col-md-6">
+                    <label class="form-label" for="">City</label>
+                    <input class="form-control" type="text" name="city">
+                </div>
+
+                <div class="col-md-6">
+                    <label class="form-label d-block" for="">Your Interests</label>
+
+                    <div class="form-check">
+                        <input id="web" class="form-check-input" type="checkbox" name="interests" value="web">
+                        <label for="web" class="form-check-label">Web Technologies</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input id="ml" class="form-check-input" type="checkbox" name="interests" value="ml">
+                        <label for="ml" class="form-check-label">Machine Learning</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input id="game" class="form-check-input" type="checkbox" name="interests" value="game">
+                        <label for="game" class="form-check-label">Game Development</label>
+                    </div>
+                </div>    
+                
+                <div class="col-md-6">
+                    <label class="form-label" for="">Enter Preffered Contact Time</label>
+                    <input class="form-control" type="time">
+                </div>
+
+                <div class="col-md-6">
+                    <label class="form-label" for="">Upload Resume</label>
+                    <input class="form-control" type="file">
+                </div>
+
+                <div class="col-md-6">
+                    <label class="form-label" for="">Years of Experience</label>
+                    <input class="form-control" type="number">
+                </div>
+
+                <div class="col-12 text-end">
+                    <button type="reset" class="btn btn-outline-secondary me-2">Reset</button>
+                    <button type="submit" id="submit_btn" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
